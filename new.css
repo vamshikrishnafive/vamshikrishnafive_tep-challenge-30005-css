@@ -1,0 +1,49 @@
+
+    .Thumbnail:hover{
+        width: 300px;
+        height: 300px;
+        content: pop;
+    }
+    /* ++++++++++++++++++++++++++++++++++++++++++++++ */
+    .Smallimg {
+        width: 200px;
+    }
+    .movecar {
+        display:list-item;
+        position: relative;    
+        border-radius: 85%;
+        animation-name: move;
+        animation-duration: 5s;
+        animation-iteration-count:infinite;
+    }
+    #car1 {
+        left: 5%;
+        animation-timing-function: ease;
+    }
+    #car2 {
+        left: 15%;
+        animation-timing-function: ease-in;
+    }
+    #car3 {
+        left: 25%;
+        animation-timing-function: ease-in-out;
+    }
+    #car4 {
+        left: 35%;
+        animation-timing-function: ease-out;
+    }
+    #car5 {
+        left: 45%;
+        animation-timing-function: linear;
+    }
+    #car6 {
+        left: 55%;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    @keyframes move{
+       50%{
+           left: 50%;
+       }
+    }
+
